@@ -6,7 +6,7 @@ final class TachoGraphViewTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(TachoGraphView().text, "Hello, World!")
+        XCTAssertEqual(TachoGraphView(frame: .zero).segments.count, 0)
     }
 
     static var allTests = [
