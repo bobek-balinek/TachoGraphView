@@ -111,6 +111,7 @@ open class TachoGraphView: UIView {
             view.bounds = bounds
             view.center = center
             view.totalLength = segmentsTotalLength
+            view.isUserInteractionEnabled = false
 
             addSubview(view)
 
