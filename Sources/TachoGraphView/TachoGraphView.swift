@@ -55,16 +55,17 @@ open class TachoGraphView: UIView {
     }
     public var resizeSubviewsToScale: Bool = true
 
+    public private(set) var segmentViews: [SegmentView] = []
+    public private(set) var backgroundView: UIImageView!
+    public private(set) var secondaryImageView: UIImageView!
+    public private(set) var indicatorView: IndicatorView!
+
     private var completedLength: CGFloat {
         return completed * segmentsTotalLength
     }
     private var rotationAngle: CGFloat {
         return -1 * ((CGFloat.pi * 2) * completed)
     }
-    private var segmentViews: [SegmentView] = []
-    private var backgroundView: UIImageView!
-    private var secondaryImageView: UIImageView!
-    private var indicatorView: IndicatorView!
 
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
